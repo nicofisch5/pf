@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'KGBeneathYourBeautiful';
+    src: url('../fonts/KGBeneathYourBeautiful.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url("../img/background.png") no-repeat center top;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.masthead {
+    background: url("../img/background_header.png") no-repeat center bottom;
+    margin-top: 40px;
+}
+
+.menu {
+    background: url("../img/background_menu.png") no-repeat center bottom;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.content {
+    background: url("../img/background_content.png") no-repeat center top;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+}
+
+.footer {
+    height: 180px;
+    margin-top: 40px;
+    background: url("../img/background_footer.png") no-repeat center top;
+}
+
+.footer > p {
+    text-align: center;
+    padding-top: 120px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav > li > a {
+    padding: 8px 15px;
+}
+
+.nav-justified > li > a {
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'KGBeneathYourBeautiful';
+    color: #5e3d1a;
+    font-size: 16px;
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+}
+.nav-justified > li:first-child > a {
+
+}
+.nav-justified > li:last-child > a {
+
+}
+
+@media (min-width: 768px) {
+    .nav-justified {
+        max-height: 52px;
+    }
+    .nav-justified > li > a {
+
+    }
+    .nav-justified > li:first-child > a {
+
+    }
+    .nav-justified > li:last-child > a {
+
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead,
+    .logo,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
