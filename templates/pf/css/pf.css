@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("../img/background.png") no-repeat center top;
+    background: #f6f7d3 url("../img/background.png") no-repeat center top;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -24,6 +24,10 @@ body {
 .logo {
     text-align: center;
     padding-bottom: 8px;
+}
+
+.content-wrapper {
+    background: url("../img/background_content_wrapper.png") repeat-y center;
 }
 
 .content {

@@ -129,30 +129,32 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 		</nav-->
 	</div>
 
-	<div class="row-fluid content">
-		<?php if ($this->countModules('position-8')) : ?>
-			<!-- Begin Sidebar -->
-			<div id="sidebar" class="span3">
-				<div class="sidebar-nav">
-					<jdoc:include type="modules" name="position-8" style="xhtml" />
+	<div class="row-fluid content-wrapper">
+		<div class="content">
+			<?php if ($this->countModules('position-8')) : ?>
+				<!-- Begin Sidebar -->
+				<div id="sidebar" class="span3">
+					<div class="sidebar-nav">
+						<jdoc:include type="modules" name="position-8" style="xhtml" />
+					</div>
 				</div>
-			</div>
-			<!-- End Sidebar -->
-		<?php endif; ?>
-		<main id="content" role="main" class="<?php echo $span; ?>">
-			<!-- Begin Content -->
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-			<jdoc:include type="modules" name="position-2" style="none" />
-			<!-- End Content -->
-		</main>
-		<?php if ($this->countModules('position-7')) : ?>
-			<div id="aside" class="span3">
-				<!-- Begin Right Sidebar -->
-				<jdoc:include type="modules" name="position-7" style="well" />
-				<!-- End Right Sidebar -->
-			</div>
-		<?php endif; ?>
+				<!-- End Sidebar -->
+			<?php endif; ?>
+			<main id="content" role="main" class="<?php echo $span; ?>">
+				<!-- Begin Content -->
+				<jdoc:include type="message" />
+				<jdoc:include type="component" />
+				<jdoc:include type="modules" name="position-2" style="none" />
+				<!-- End Content -->
+			</main>
+			<?php if ($this->countModules('position-7')) : ?>
+				<div id="aside" class="span3">
+					<!-- Begin Right Sidebar -->
+					<jdoc:include type="modules" name="position-7" style="well" />
+					<!-- End Right Sidebar -->
+				</div>
+			<?php endif; ?>
+		</div>
 	</div>
 
 	<!-- Example row of columns -->
