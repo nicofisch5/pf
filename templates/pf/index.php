@@ -76,17 +76,14 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<jdoc:include type="head" />
-
 	<?php // Use of Google Font ?>
 	<?php if ($this->params->get('googleFont')) : ?>
-		<!--link href='//fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName'); ?>' rel='stylesheet' type='text/css' /-->
-		<style type="text/css">
-			h1,h2,h3,h4,h5,h6,.site-title{
-				font-family: '<?php echo str_replace('+', ' ', $this->params->get('googleFontName')); ?>', sans-serif;
-			}
-		</style>
+		<!--link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css"-->
+		<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100normal,100italic,300normal,300italic,400normal,400italic,700normal,700italic,900normal,900italic|Open+Sans:400normal|Oswald:400normal|Roboto:400normal|Indie+Flower:400normal|Source+Sans+Pro:400normal|Raleway:400normal|PT+Sans:400normal|Droid+Sans:400normal|Ubuntu:400normal|Merriweather:400normal&subset=all">
+
 	<?php endif; ?>
+
+	<jdoc:include type="head" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -129,8 +126,8 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 		</nav-->
 	</div>
 
-	<div class="row-fluid content-wrapper">
-		<div class="content">
+	<div class="row-fluid central-wrapper">
+		<div class="central">
 			<?php if ($this->countModules('position-8')) : ?>
 				<!-- Begin Sidebar -->
 				<div id="sidebar" class="span3">
@@ -158,7 +155,7 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 	</div>
 
 	<!-- Example row of columns -->
-	<div class="row">
+	<!--div class="row">
 		<div class="col-lg-4">
 			<h2>Safari bug warning!</h2>
 			<p class="text-danger">As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
@@ -175,7 +172,7 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
 			<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
 		</div>
-	</div>
+	</div--	>
 
 </div> <!-- /container -->
 

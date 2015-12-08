@@ -1,3 +1,9 @@
+/*
+Color code
+Vert : cfd500
+Marron : 5e3d1a
+*/
+
 @font-face {
     font-family: 'KGBeneathYourBeautiful';
     src: url('../fonts/KGBeneathYourBeautiful.ttf');
@@ -7,7 +13,7 @@
 
 body {
     background: #f6f7d3 url("../img/background.png") no-repeat center top;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
 }
 
 .masthead {
@@ -26,15 +32,16 @@ body {
     padding-bottom: 8px;
 }
 
-.content-wrapper {
+.central-wrapper {
     background: url("../img/background_content_wrapper.png") repeat-y center;
 }
 
-.content {
+.central {
     background: url("../img/background_content.png") no-repeat center top;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 .footer {
@@ -48,15 +55,24 @@ body {
     padding-top: 120px;
 }
 
+/* h1 , h2, ... */
+h2 > a {
+    color: #5e3d1a;
+    font-size: 36px;
+    font-family: "Lato" !important;
+    font-style: normal;
+    font-weight: 100;
+}
+
 /* Main marketing message and sign up button */
-.jumbotron {
+/*.jumbotron {
     text-align: center;
     background-color: transparent;
 }
 .jumbotron .btn {
     padding: 14px 24px;
     font-size: 21px;
-}
+}*/
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 
