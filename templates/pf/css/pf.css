@@ -13,7 +13,9 @@ Marron : 5e3d1a
 
 body {
     background: #f6f7d3 url("../img/background.png") no-repeat center top;
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #5e3d1a;
+    font-weight: 300;
 }
 
 .masthead {
@@ -53,15 +55,21 @@ body {
 .footer > p {
     text-align: center;
     padding-top: 120px;
+    font-size: 12px;
 }
 
 /* h1 , h2, ... */
 h2 > a {
-    color: #5e3d1a;
     font-size: 36px;
-    font-family: "Lato" !important;
     font-style: normal;
-    font-weight: 100;
+    color: #5e3d1a;
+    letter-spacing: -2px;
+}
+
+/* Link */
+a:hover {
+    color: #cfd500;
+    text-decoration: underline;
 }
 
 /* Main marketing message and sign up button */
@@ -78,6 +86,12 @@ h2 > a {
 
 .nav > li > a {
     padding: 8px 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    color: #cfd500;
+    text-decoration: underline;
+    background: none;
 }
 
 .nav-justified > li > a {

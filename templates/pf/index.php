@@ -78,8 +78,8 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 
 	<?php // Use of Google Font ?>
 	<?php if ($this->params->get('googleFont')) : ?>
-		<!--link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css"-->
-		<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100normal,100italic,300normal,300italic,400normal,400italic,700normal,700italic,900normal,900italic|Open+Sans:400normal|Oswald:400normal|Roboto:400normal|Indie+Flower:400normal|Source+Sans+Pro:400normal|Raleway:400normal|PT+Sans:400normal|Droid+Sans:400normal|Ubuntu:400normal|Merriweather:400normal&subset=all">
+		<!--link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'-->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
 	<?php endif; ?>
 
