@@ -19,14 +19,24 @@ body {
 }
 
 .masthead {
-    background: url("../img/background_header.png") no-repeat center bottom;
     margin-top: 40px;
+    background: url("../img/background_header_light.png") no-repeat center bottom;
 }
 
-.menu {
-    background: url("../img/background_menu.png") no-repeat center bottom;
+.nav {
+    background: #fff;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        background: url("../img/background_header.png") no-repeat center bottom;
+    }
+
+    .nav {
+        background: url("../img/background_menu.png") no-repeat center bottom;
+    }
 }
 
 .logo {
@@ -55,14 +65,27 @@ body {
 
 /* Footer */
 .footer {
+    /*width: 1265px;*/
     height: 180px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 40px;
-    background: url("../img/background_footer.png") no-repeat center top;
+    background: url("../img/background_footer_grid.png") no-repeat center top;
+}
+
+.footer-rabbit {
+    width: 146px;
+    height: 105px;
+    margin-right: auto;
+    margin-left: auto;
+    background: url("../img/background_footer_rabbits.png") no-repeat center top;
 }
 
 .footer > p {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 40px;
     font-size: 12px;
 }
 

@@ -106,7 +106,7 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 
 	</div>
 
-	<div class="menu">
+
 		<?php if ($this->countModules('position-1')) : ?>
 			<nav class="navigation" role="navigation">
 				<jdoc:include type="modules" name="position-1" style="none" />
@@ -124,7 +124,7 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav-->
-	</div>
+
 
 	<div class="row-fluid central-wrapper">
 		<div class="central">
@@ -172,12 +172,13 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
 			<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
 		</div>
-	</div--	>
-
-</div> <!-- /container -->
+	</div-->
+ <!-- /container -->
+</div>
 
 <!-- Site footer -->
 <footer class="footer">
+	<div class="footer-rabbit"></div>
 	<p>&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?></p>
 </footer>
 
