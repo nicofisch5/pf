@@ -29,7 +29,7 @@ body {
 }
 
 .masthead {
-    margin-top: 40px;
+    margin-top: 0px;
     background: url("../img/background_header_light.png") no-repeat center bottom;
 }
 
@@ -56,6 +56,10 @@ body {
 }
 
 @media (min-width: 384px) {
+    .masthead {
+        margin-top: 40px;
+    }
+
     .logo {
         background: url("../img/logo.png") no-repeat center bottom;
         /*width: 396px;*/
