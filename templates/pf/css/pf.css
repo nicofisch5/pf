@@ -22,6 +22,12 @@ body {
     background: url("../img/background.png") no-repeat center top;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        width: 1070px;
+    }
+}
+
 .masthead {
     margin-top: 40px;
     background: url("../img/background_header_light.png") no-repeat center bottom;
@@ -64,8 +70,8 @@ body {
 
 .central {
     background: url("../img/background_content.png") no-repeat center top;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 5px;
     padding-bottom: 20px;
 }
