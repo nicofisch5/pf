@@ -30,7 +30,6 @@ body {
 
 .masthead {
     margin-top: 0px;
-    background: url("../img/background_header_light.png") no-repeat center bottom;
 }
 
 .nav {
@@ -58,6 +57,7 @@ body {
 @media (min-width: 384px) {
     .masthead {
         margin-top: 40px;
+        background: url("../img/background_header_light.png") no-repeat center bottom;
     }
 
     .logo {
