@@ -63,9 +63,6 @@ else
 {
 	$span = "span12";
 }
-
-// Logo file
-$logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/logo.png" alt="Logo MAM Petite ferme" />';
 ?>
 
 <!DOCTYPE html>
@@ -93,94 +90,96 @@ $logo = '<img src="' . $this->baseurl . '/templates/' . $this->template . '/img/
 </head>
 
 <body>
+	<div class="main">
 
-<div class="container">
+		<div class="container">
 
-	<!-- The justified navigation menu is meant for single line per list item.
-         Multiple lines will require custom code not provided by Bootstrap. -->
-	<div class="masthead">
-		<div class="logo"><?php echo $logo; ?></div>
-        <?php if ($this->params->get('sitedescription')) : ?>
-            <?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
-        <?php endif; ?>
+			<!-- The justified navigation menu is meant for single line per list item.
+				 Multiple lines will require custom code not provided by Bootstrap. -->
+			<div class="masthead">
+				<a href="<?php echo $this->baseurl; ?>"><div class="logo"></div></a>
+				<?php if ($this->params->get('sitedescription')) : ?>
+					<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
+				<?php endif; ?>
+
+			</div>
+
+
+				<?php if ($this->countModules('position-1')) : ?>
+					<nav class="navigation" role="navigation">
+						<jdoc:include type="modules" name="position-1" style="none" />
+					</nav>
+				<?php endif; ?>
+				<jdoc:include type="modules" name="banner" style="xhtml" />
+
+				<!--nav>
+					<ul class="nav nav-justified">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav-->
+
+
+			<div class="row-fluid central-wrapper">
+				<div class="central">
+					<?php if ($this->countModules('position-8')) : ?>
+						<!-- Begin Sidebar -->
+						<div id="sidebar" class="span3">
+							<div class="sidebar-nav">
+								<jdoc:include type="modules" name="position-8" style="xhtml" />
+							</div>
+						</div>
+						<!-- End Sidebar -->
+					<?php endif; ?>
+					<main id="content" role="main" class="<?php echo $span; ?>">
+						<!-- Begin Content -->
+						<jdoc:include type="message" />
+						<jdoc:include type="component" />
+						<jdoc:include type="modules" name="position-2" style="none" />
+						<!-- End Content -->
+					</main>
+					<?php if ($this->countModules('position-7')) : ?>
+						<div id="aside" class="span3">
+							<!-- Begin Right Sidebar -->
+							<jdoc:include type="modules" name="position-7" style="well" />
+							<!-- End Right Sidebar -->
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+
+			<!-- Example row of columns -->
+			<!--div class="row">
+				<div class="col-lg-4">
+					<h2>Safari bug warning!</h2>
+					<p class="text-danger">As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-lg-4">
+					<h2>Heading</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-lg-4">
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+					<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+				</div>
+			</div-->
+		 <!-- /container -->
+		</div>
+
+		<!-- Site footer -->
+		<footer class="footer">
+			<div class="footer-rabbit"></div>
+			<p>&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?></p>
+		</footer>
 
 	</div>
-
-
-		<?php if ($this->countModules('position-1')) : ?>
-			<nav class="navigation" role="navigation">
-				<jdoc:include type="modules" name="position-1" style="none" />
-			</nav>
-		<?php endif; ?>
-		<jdoc:include type="modules" name="banner" style="xhtml" />
-
-		<!--nav>
-			<ul class="nav nav-justified">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Downloads</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav-->
-
-
-	<div class="row-fluid central-wrapper">
-		<div class="central">
-			<?php if ($this->countModules('position-8')) : ?>
-				<!-- Begin Sidebar -->
-				<div id="sidebar" class="span3">
-					<div class="sidebar-nav">
-						<jdoc:include type="modules" name="position-8" style="xhtml" />
-					</div>
-				</div>
-				<!-- End Sidebar -->
-			<?php endif; ?>
-			<main id="content" role="main" class="<?php echo $span; ?>">
-				<!-- Begin Content -->
-				<jdoc:include type="message" />
-				<jdoc:include type="component" />
-				<jdoc:include type="modules" name="position-2" style="none" />
-				<!-- End Content -->
-			</main>
-			<?php if ($this->countModules('position-7')) : ?>
-				<div id="aside" class="span3">
-					<!-- Begin Right Sidebar -->
-					<jdoc:include type="modules" name="position-7" style="well" />
-					<!-- End Right Sidebar -->
-				</div>
-			<?php endif; ?>
-		</div>
-	</div>
-
-	<!-- Example row of columns -->
-	<!--div class="row">
-		<div class="col-lg-4">
-			<h2>Safari bug warning!</h2>
-			<p class="text-danger">As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-		</div>
-		<div class="col-lg-4">
-			<h2>Heading</h2>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-		</div>
-		<div class="col-lg-4">
-			<h2>Heading</h2>
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-			<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-		</div>
-	</div-->
- <!-- /container -->
-</div>
-
-<!-- Site footer -->
-<footer class="footer">
-	<div class="footer-rabbit"></div>
-	<p>&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?></p>
-</footer>
-
 </body>
 </html>

@@ -12,10 +12,14 @@ Marron : 5e3d1a
 }
 
 body {
-    background: #f6f7d3 url("../img/background.png") no-repeat center top;
+    background: #f6f7d3 url("../img/background_unlimited.png") repeat-x top;
     font-family: 'Roboto', Arial, sans-serif;
     color: #5e3d1a;
     font-weight: 300;
+}
+
+.main {
+    background: url("../img/background.png") no-repeat center top;
 }
 
 .masthead {
@@ -40,8 +44,18 @@ body {
 }
 
 .logo {
+    background: url("../img/logo_small.png") no-repeat center bottom;
+    height: 114px;
     text-align: center;
-    padding-bottom: 8px;
+}
+
+@media (min-width: 384px) {
+    .logo {
+        background: url("../img/logo.png") no-repeat center bottom;
+        /*width: 396px;*/
+        height: 225px;
+        padding-bottom: 8px;
+    }
 }
 
 .central-wrapper {
