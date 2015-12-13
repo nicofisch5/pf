@@ -114,7 +114,7 @@ body {
 }
 
 /* Link */
-a, a:visited {
+a {
     color: #cfd500;
 }
 a:hover {
