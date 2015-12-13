@@ -114,7 +114,7 @@ body {
 }
 
 /* h1 , h2, ... */
-h2 > a {
+h1, h2, h2 > a, h2 > span {
     font-size: 36px;
     font-style: normal;
     color: #5e3d1a;
@@ -122,6 +122,9 @@ h2 > a {
 }
 
 /* Link */
+a, a:visited {
+    color: #cfd500;
+}
 a:hover {
     color: #cfd500;
     text-decoration: underline;
@@ -138,9 +141,23 @@ a:hover {
 }*/
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
+@media (min-width: 768px) {
+    .nav > li {
+        background: url("../img/menu_separator.png") no-repeat left 11px;
+        width: 200px;
+    }
+
+    .nav > li:first-child {
+        background: none;
+    }
+
+    .nav > li > a {
+        padding: 8px 15px 8px 28px;
+    }
+}
 
 .nav > li > a {
-    padding: 8px 15px;
+    padding: 8px 15px 8px 15px;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -195,3 +212,16 @@ a:hover {
     }
 }
 
+/* Form */
+.btn-primary, .btn-primary:hover {
+    color: #cfd500;
+    font-weight: bold;
+    background-color: #5e3d1a;
+    border-color: #5e3d1a;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.controls <
