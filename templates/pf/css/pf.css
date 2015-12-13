@@ -113,14 +113,6 @@ body {
     font-size: 12px;
 }
 
-/* h1 , h2, ... */
-h1, h2, h2 > a, h2 > span {
-    font-size: 36px;
-    font-style: normal;
-    color: #5e3d1a;
-    letter-spacing: -2px;
-}
-
 /* Link */
 a, a:visited {
     color: #cfd500;
@@ -128,6 +120,14 @@ a, a:visited {
 a:hover {
     color: #cfd500;
     text-decoration: underline;
+}
+
+/* h1 , h2, ... */
+h1, h2, h2 > a, h2 > span {
+    font-size: 36px;
+    font-style: normal;
+    color: #5e3d1a;
+    letter-spacing: -2px;
 }
 
 /* Main marketing message and sign up button */
