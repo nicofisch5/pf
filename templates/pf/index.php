@@ -77,7 +77,6 @@ else
 	<?php if ($this->params->get('googleFont')) : ?>
 		<!--link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-
 	<?php endif; ?>
 
 	<jdoc:include type="head" />
@@ -137,9 +136,9 @@ else
 					<?php endif; ?>
 					<main id="content" role="main" class="<?php echo $span; ?>">
 						<!-- Begin Content -->
+						<jdoc:include type="modules" name="position-2" style="none" />
 						<jdoc:include type="message" />
 						<jdoc:include type="component" />
-						<jdoc:include type="modules" name="position-2" style="none" />
 						<!-- End Content -->
 					</main>
 					<?php if ($this->countModules('position-7')) : ?>
