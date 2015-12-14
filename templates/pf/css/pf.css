@@ -38,16 +38,6 @@ body {
     padding-right: 100px;
 }
 
-@media (min-width: 992px) {
-    .masthead {
-        background: url("../img/background_header.png") no-repeat center bottom;
-    }
-
-    .nav {
-        background: url("../img/background_menu.png") no-repeat center bottom;
-    }
-}
-
 .logo {
     background: url("../img/logo_small.png") no-repeat center bottom;
     height: 114px;
@@ -65,6 +55,16 @@ body {
         /*width: 396px;*/
         height: 225px;
         padding-bottom: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        background: url("../img/background_header.png") no-repeat center bottom;
+    }
+
+    .nav {
+        background: url("../img/background_menu.png") no-repeat center bottom;
     }
 }
 
