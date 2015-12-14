@@ -130,6 +130,15 @@ h1, h2, h2 > a, h2 > span {
     letter-spacing: -2px;
 }
 
+/* Breadcrumb */
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
 /* Main marketing message and sign up button */
 /*.jumbotron {
     text-align: center;
@@ -160,7 +169,7 @@ h1, h2, h2 > a, h2 > span {
     padding: 8px 15px 8px 15px;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
+.nav > li > a:hover, .nav > li > a:focus, .nav-justified > .active > a {
     color: #cfd500;
     text-decoration: underline;
     background: none;
@@ -224,4 +233,20 @@ h1, h2, h2 > a, h2 > span {
     text-align: left;
 }
 
-.controls <
+/* Article */
+.item-image {
+    margin-right: 20px;
+}
+
+.item-image img {
+    max-width: 450px;
+}
+
+.pager li > a, .pager li > span, .pager li > a:hover, .pager li > span:hover {
+    border: 0px;
+    background: #fff;
+}
+
+.pager li > a:hover, .pager li > span:hover {
+    text-decoration: underline;
+}
