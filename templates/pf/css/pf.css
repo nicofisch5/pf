@@ -136,6 +136,10 @@ h1, h2, h2 > a, h2 > span {
     letter-spacing: -2px;
 }
 
+h2 > a:hover {
+    text-decoration: none;
+}
+
 /* Breadcrumb */
 .breadcrumb {
     padding: 8px 15px;
