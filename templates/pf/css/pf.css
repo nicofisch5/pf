@@ -324,3 +324,15 @@ h2 > a:hover {
 .pager li > a:hover, .pager li > span:hover {
     text-decoration: underline;
 }
+
+dt.article-info-term {
+    display: none;
+}
+
+dd.category-name, dd.published {
+    display: inline-block;
+}
+
+dd.category-name:after {
+    content: ' / ';
+}
