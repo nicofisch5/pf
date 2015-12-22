@@ -232,14 +232,12 @@ h2 > a:hover {
         z-index: 1000;
         display: none;
 
-        width: 171px;
-
         background: #ffffff;
         border-bottom: 2px solid #5e3d1a;
         border-right: 2px solid #5e3d1a;
         border-left: 2px solid #5e3d1a;
 
-        min-width: 150px;
+        min-width: 190px;
         padding: 5px 0px 10px 0px;
         border-radius: 0px 0px 7px 7px;
     }
