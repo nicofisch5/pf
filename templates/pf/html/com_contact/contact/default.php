@@ -30,7 +30,8 @@ jimport('joomla.html.html.bootstrap');
 		</div>
 	<?php endif;  ?>
 
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29719.630732354763!2d7.7707060431946955!3d48.8225598607865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479694cb5b23f8e5%3A0xf7985160079a4f74!2s15+Rue+de+la+Ferme+Hund%2C+67500+Haguenau!5e0!3m2!1sfr!2sfr!4v1450608037204" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<!--iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29719.630732354763!2d7.7707060431946955!3d48.8225598607865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479694cb5b23f8e5%3A0xf7985160079a4f74!2s15+Rue+de+la+Ferme+Hund%2C+67500+Haguenau!5e0!3m2!1sfr!2sfr!4v1450608037204" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe-->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29719.630732354763!2d7.7707060431946955!3d48.8225598607865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479694cb5b23f8e5%3A0xf7985160079a4f74!2s15+Rue+de+la+Ferme+Hund%2C+67500+Haguenau!5e0!3m2!1sfr!2sfr!4v1450608037204" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 	<?php if ($this->params->get('show_contact_category') == 'show_no_link') : ?>
 		<h3>
