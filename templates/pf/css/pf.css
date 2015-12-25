@@ -374,16 +374,16 @@ iframe {
     /*height: 225px;*/
 }
 
-/*@media (min-width: 768px) {
-    iframe {
-        width: 600px;
-        height: 450px;
-    }
-}*/
-
-/*@media (min-width: 384px) {
+@media (min-width: 384px) {
     iframe {
         width: 300px;
         height: 225px;
     }
-}*/
+}
+
+@media (min-width: 768px) {
+    iframe {
+        width: 600px;
+        height: 450px;
+    }
+}
