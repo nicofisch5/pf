@@ -197,6 +197,7 @@ h2 > a:hover {
     font-weight: bold;
     text-align: center;
     font-family: 'KGBeneathYourBeautiful';
+    letter-spacing: 1px;
     color: #5e3d1a;
     font-size: 16px;
     width: auto;
