@@ -172,7 +172,9 @@ h2 > a:hover {
 @media (min-width: 768px) {
     .nav > li {
         background: url("../img/menu_separator.png") no-repeat left 11px;
-        width: 200px;
+        /*width: 200px;*/
+        width: auto;
+        padding: 0px 15px 0px 30px;
     }
 
     .nav > li:first-child {
@@ -239,7 +241,7 @@ h2 > a:hover {
     .nav-child {
         position: absolute;
         top: 100%;
-        left: 12px;
+        left: 18px;
         z-index: 1000;
         display: none;
 
