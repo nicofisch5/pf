@@ -8,32 +8,38 @@
 
 <url>
   <loc>http://www.mam-lapetiteferme.fr/</loc>
-  <lastmod>2016-01-17T07:34:33+00:00</lastmod>
+  <lastmod>2016-01-19T13:32:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.mam-lapetiteferme.fr/accueil/qui-sommes-nous.html</loc>
-  <lastmod>2016-01-17T07:34:33+00:00</lastmod>
+  <lastmod>2016-01-19T13:32:15+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.mam-lapetiteferme.fr/actu.html</loc>
+  <lastmod>2016-01-19T13:32:15+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.mam-lapetiteferme.fr/contactez-nous.html</loc>
-  <lastmod>2016-01-17T07:34:33+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.mam-lapetiteferme.fr/connexion-auteur.html</loc>
-  <lastmod>2016-01-17T07:34:33+00:00</lastmod>
+  <lastmod>2016-01-19T13:32:15+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.mam-lapetiteferme.fr/menu-de-la-semaine.html</loc>
-  <lastmod>2016-01-17T07:34:34+00:00</lastmod>
+  <lastmod>2016-01-19T13:32:15+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.mam-lapetiteferme.fr/actu/9-bonhomme-de-neige.html</loc>
+  <lastmod>2016-01-19T13:32:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 </urlset>
