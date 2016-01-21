@@ -359,6 +359,20 @@ dd.category-name:after {
     content: ' / ';
 }
 
+dd.published {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    dd.published {
+        float: right;
+        width: auto;
+        font-style: italic;
+    }
+}
+
 /* Espace parents */
 .nav-tabs {
     padding: 0px;
