@@ -409,3 +409,32 @@ iframe {
         height: 450px;
     }
 }
+
+/* Pagination */
+.pagination {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.pagination ul {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.pagination ul > li {
+    display: inline;
+}
+.pagination ul > li > a,
+.pagination ul > li > span {
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 4px 12px;
+    line-height: 18px;
+}
+
+.pagination .counter {
+    margin-left: 20px;
+    font-size: smaller;
+}

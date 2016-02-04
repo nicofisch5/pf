@@ -42,8 +42,7 @@
 		<position>footer</position>
 	</positions>
 	<languages folder="language">
-		<language tag="fr-FR">fr-FR/fr-FR.tpl_protostar.ini</language>
-		<language tag="fr-FR">fr-FR/fr-FR.tpl_protostar.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_pf.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
