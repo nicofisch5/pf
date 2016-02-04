@@ -3,10 +3,15 @@ jQuery(window).on('load',
 
         jQuery('#content img').each(
             function(){
-                jQuery(this).addClass('img-responsive');
-                var wrapper = '<a href="' + jQuery(this).attr('src') + '" rel="lightbox"></a>';
-                jQuery(this).wrap(wrapper);
-
-                jQuery(document).ready(function(){ Mediabox.scanPage(); });
+                // Compatibility sigplus plugin
+                if (! jQuery(this).attr('data-thumb')) {
+                    jQuery(this).addClass('img-responsive');
+                    var wrapper = '<a href="' + jQuery(this).attr('src') + '" rel="lightbox"></a>';
+                    jQuery(this).wrap(wrapper);
+                }
             });
+
+        jQuery(document).ready(function () {
+            Mediabox.scanPage();
+        });
     });
