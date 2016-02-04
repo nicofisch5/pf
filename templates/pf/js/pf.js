@@ -1,7 +1,7 @@
 jQuery(window).on('load',
     function(){
 
-        jQuery('.row img').each(
+        jQuery('#content img').each(
             function(){
                 jQuery(this).addClass('img-responsive');
                 var wrapper = '<a href="' + jQuery(this).attr('src') + '" rel="lightbox"></a>';
