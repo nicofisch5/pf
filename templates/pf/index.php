@@ -38,6 +38,8 @@ else
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.min.js');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/pf.js');
+
 
 // Add Stylesheets
 $doc->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.css');
