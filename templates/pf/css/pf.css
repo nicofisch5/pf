@@ -70,7 +70,7 @@ body {
     }
 
     .nav {
-        background: url("../img/background_menu.png") no-repeat center bottom;
+        background: url("../img/background_menu.png") repeat-y center bottom;
     }
 }
 
