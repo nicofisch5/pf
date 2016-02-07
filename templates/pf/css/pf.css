@@ -169,7 +169,7 @@ h2 > a:hover {
 }*/
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nav > li {
         background: url("../img/menu_separator.png") no-repeat left 11px;
         /*width: 200px;*/
